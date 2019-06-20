@@ -1,4 +1,4 @@
-package com.data.structure.linearlist;
+package src.com.data.structure.linearlist;
 
 /**
  * @author lyf
