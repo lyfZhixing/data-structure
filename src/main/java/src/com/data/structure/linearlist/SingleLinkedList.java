@@ -40,6 +40,12 @@ public class SingleLinkedList implements MyList {
 
     @Override
     public void delete(int index) throws Exception {
+        Node p = head;
+        for (int i=0; i < index; i++) {
+            p = p.next;
+        }
+        p.next = p.next.next;
+        size--;
 
     }
 
@@ -54,7 +60,7 @@ public class SingleLinkedList implements MyList {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
     public String toString() {
@@ -92,6 +98,7 @@ class SingleLinkedListTest {
         list.add(2);
         list.add(3);
         list.insert(0,0);
+        list.delete(0);
         System.out.println(list.toString());
     }
 }
