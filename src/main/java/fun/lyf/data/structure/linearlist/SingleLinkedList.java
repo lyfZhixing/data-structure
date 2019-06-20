@@ -1,4 +1,4 @@
-package src.com.data.structure.linearlist;
+package fun.lyf.data.structure.linearlist;
 
 /**
  * @author lyf
