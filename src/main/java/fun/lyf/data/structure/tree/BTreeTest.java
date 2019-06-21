@@ -22,4 +22,14 @@ public class BTreeTest {
     public void testSize() {
         System.out.println(bTree.size());
     }
+
+    @Test
+    public void testHeight() {
+        System.out.println(bTree.getHeight());
+    }
+
+    @Test
+    public void testFind() {
+        System.out.println(bTree.findKey(2));
+    }
 }

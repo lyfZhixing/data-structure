@@ -55,7 +55,17 @@ public class LinkedBinaryTree implements BinaryTree {
      */
     @Override
     public int getHeight() {
-        return 0;
+        return height(root);
+    }
+
+    private int height(Node root) {
+        if (root == null) {
+            return 0;
+        }else {
+            int leftHeight = height(root.leftChild);
+            int rightHeight = height(root.rightChild);
+            return (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
+        }
     }
 
     /**
@@ -67,7 +77,21 @@ public class LinkedBinaryTree implements BinaryTree {
      */
     @Override
     public Node findKey(Object data) {
-        return null;
+
+        return find(root, data);
+    }
+
+    private Node find(Node root, Object data) {
+
+        if (root == null ) {
+            return null;
+        } else if (root.data == data) {
+            return root;
+        } else {
+            Node left = find(root.leftChild, data);
+            Node right = find(root.rightChild, data);
+            return left == null ? right : left;
+        }
     }
 
     /**
