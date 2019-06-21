@@ -32,4 +32,11 @@ public class BTreeTest {
     public void testFind() {
         System.out.println(bTree.findKey(2));
     }
+
+    @Test
+    public void testOrder() {
+        bTree.preOrderTraverse();
+        System.out.println("------------------------");
+        bTree.midOrderTraverse();
+    }
 }

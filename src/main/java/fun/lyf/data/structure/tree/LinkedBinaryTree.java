@@ -102,7 +102,17 @@ public class LinkedBinaryTree implements BinaryTree {
      */
     @Override
     public void preOrderTraverse() {
+        preOrder(root);
+    }
 
+    private void preOrder(Node root) {
+        if (root == null) {
+            return;
+        } else {
+            System.out.println(root);
+            preOrder(root.leftChild);
+            preOrder(root.rightChild);
+        }
     }
 
     /**
@@ -113,6 +123,10 @@ public class LinkedBinaryTree implements BinaryTree {
      */
     @Override
     public void midOrderTraverse() {
+        // midOrder(root);
+    }
+
+    private void midOrder(Node root) {
 
     }
 
