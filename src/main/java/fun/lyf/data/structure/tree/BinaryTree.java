@@ -36,4 +36,30 @@ public interface BinaryTree {
      */
     Node findKey(Object data);
 
+    /**
+     * @description 前序递归遍历
+     * @author lyf
+     * @date 2019/6/21 9:05
+     * @return void
+     */
+    void preOrderTraverse();
+
+    /**
+     * @description 中序递归遍历
+     * @author lyf
+     * @date 2019/6/21 9:06
+     * @return void
+     */
+    void midOrderTraverse();
+
+    /**
+     * @description 后序递归遍历
+     * @author lyf
+     * @date 2019/6/21 9:12
+     * @return void
+     */
+    void postOrderTraverse();
+
+
+
 }
