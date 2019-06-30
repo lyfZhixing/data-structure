@@ -60,6 +60,20 @@ public interface BinaryTree {
      */
     void postOrderTraverse();
 
+    /**
+     * @description 使用栈进行中序遍历 非递归
+     * @author lyf
+     * @date 2019-6-30 19:25:02
+     */
+    void midOrderStack();
+
+    /**
+     * @description 使用队列按层次遍历 非递归
+     * @author lyf
+     * @date 2019-6-30 19:26:59
+     */
+    void orderByQueue();
+
 
 
 }

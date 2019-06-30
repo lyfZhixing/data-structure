@@ -140,4 +140,16 @@ public class LinkedBinaryTree implements BinaryTree {
     public void postOrderTraverse() {
 
     }
+
+    @Override
+    public void midOrderStack() {
+
+    }
+
+    @Override
+    public void orderByQueue() {
+
+    }
+
+
 }
